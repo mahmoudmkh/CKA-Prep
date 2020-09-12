@@ -1,4 +1,10 @@
 # CKA-Prep
+## install auto-completion
+yum install install bash-completion
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+source .bashrc.
+
+
 ## Tips and Triks
 
 working version 1.14
