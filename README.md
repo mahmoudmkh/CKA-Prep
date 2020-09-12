@@ -41,7 +41,7 @@ yum install -y kubectl
 
 yum install -y kubeadm-v1.19.0-0 --disableexcludes=kubernetes
 
-yum install -y kubectl-1.19.0 --disableexcludes=kubernetes
+yum install -y kubectl-v1.19.0-0 --disableexcludes=kubernetes
 
 systemctl daemon-reload
 
