@@ -59,3 +59,8 @@ not working on version 1.19
 
 kubectl run --generator=run-pod/v1 elephant --image=redis --dry-run -o yaml > elaphant.yaml
 
+yum list --showduplicates kubeadm --disableexcludes=kubernetes
+journalctl -u kubelet
+
+
+
