@@ -63,4 +63,8 @@ yum list --showduplicates kubeadm --disableexcludes=kubernetes
 journalctl -u kubelet
 
 
-
+------------------------------------------------------------
+sudo kubeadm reset 
+sudo yum remove kubeadm kubectl kubelet kubernetes-cni kube*    
+sudo yum autoremove 
+sudo rm -rf ~/.kube
