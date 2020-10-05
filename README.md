@@ -68,3 +68,5 @@ sudo kubeadm reset
 sudo yum remove kubeadm kubectl kubelet kubernetes-cni kube*    
 sudo yum autoremove 
 sudo rm -rf ~/.kube
+---------------------------
+https://k8syaml.com/
