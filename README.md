@@ -69,4 +69,23 @@ sudo yum remove kubeadm kubectl kubelet kubernetes-cni kube*
 sudo yum autoremove 
 sudo rm -rf ~/.kube
 ---------------------------
+yaml generator
+------------------------------
 https://k8syaml.com/
+------------------------------
+metric and monitoring
+-----------------------------
+mkdir monitoring ; cd monitoring
+git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
+cd kubernetes-metrics-server/
+kubectl create -f . 
+# => pod added on the namespace kube-system   metrics-server-774b56d589-4t6vg
+controlplane $ kubectl top node
+NAME           CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%
+controlplane   155m         7%     995Mi           52%
+node01         1997m        99%    488Mi           12%
+controlplane $ kubectl top pod
+NAME       CPU(cores)   MEMORY(bytes)
+elephant   13m          50Mi
+lion       959m         1Mi
+rabbit     977m         1Mi
