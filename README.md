@@ -83,7 +83,7 @@ cd kubernetes-metrics-server/
 
 kubectl create -f . 
 
-# => pod added on the namespace kube-system   metrics-server-774b56d589-4t6vg
+# => pod added on the system namespace kube-system   metrics-server-774b56d589-4t6vg
 
 controlplane $ kubectl top node
 
