@@ -72,7 +72,12 @@ sudo rm -rf ~/.kube
 yaml generator
 ------------------------------
 https://k8syaml.com/
+
+---------------------------
+information about token
 ------------------------------
+# https://jwt.io/
+
 metric and monitoring
 -----------------------------
 mkdir monitoring ; cd monitoring
